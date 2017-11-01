@@ -4,7 +4,6 @@
     <item
         android:id="@+id/log_out"
         app:showAsAction="never"
-        android:title="@string/log_out"
-        android:icon="@dr"/>
+        android:title="@string/log_out" />
 
 </menu>
