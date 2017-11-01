@@ -6,8 +6,9 @@ import android.widget.TextView;
 
 import java.io.Serializable;
 
+import static com.phoebus_ravi.www.newsapp.AppUtils.NEWS_STORY_KEY;
+
 public class NewsDetailActivity extends AppCompatActivity {
-    public static final String NEWS_STORY_KEY = "news_story_key";
 
     TextView sectionNameTextView;
     TextView titleTextView;

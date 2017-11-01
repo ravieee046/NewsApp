@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -20,8 +19,9 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import java.io.Serializable;
 import java.util.List;
+
+import static com.phoebus_ravi.www.newsapp.AppUtils.NEWS_STORY_KEY;
 
 public class NewsStoryMainActivity extends AppCompatActivity
     implements LoaderManager.LoaderCallbacks<List<NewsStory>> {
@@ -29,7 +29,6 @@ public class NewsStoryMainActivity extends AppCompatActivity
     public static final String LOG_TAG = NewsStoryMainActivity.class.getSimpleName();
     public static final String GUARDIAN_REQUEST_URL =
         "https://content.guardianapis.com/search?api-key=460ff024-fb65-411e-81eb-b16c23a61eca";
-    public static final String NEWS_STORY_KEY = "news_story_key";
 
     private NewsStoryAdapter newsStoryAdapter;
     private ProgressBar progressBar;

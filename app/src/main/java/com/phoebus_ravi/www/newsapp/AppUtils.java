@@ -8,6 +8,8 @@ import android.support.v4.content.ContextCompat;
  */
 
 public final class AppUtils {
+    public static final String NEWS_STORY_KEY = "news_story_key";
+
     public static int setColorBasedOnSection(String sectionName, Context context){
         int color;
         if(sectionName.equalsIgnoreCase("BOOKS")){
