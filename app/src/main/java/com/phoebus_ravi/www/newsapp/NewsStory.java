@@ -1,13 +1,16 @@
 package com.phoebus_ravi.www.newsapp;
 
-public class NewsStory {
+import java.io.Serializable;
+
+public class NewsStory implements Serializable {
     private String mTitle;
     private String mSection;
     private String mPublishedDate;
     private String mWebUrl;
     private String mType;
 
-    public NewsStory(String mTitle, String mSection, String mPublishedDate, String mWebUrl, String mType) {
+    public NewsStory(String mTitle, String mSection, String mPublishedDate, String mWebUrl,
+        String mType) {
         this.mTitle = mTitle;
         this.mSection = mSection;
         this.mPublishedDate = mPublishedDate;

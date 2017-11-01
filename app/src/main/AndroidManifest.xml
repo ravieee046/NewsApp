@@ -2,10 +2,10 @@
 <manifest package="com.phoebus_ravi.www.newsapp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--Permission to access network-->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <!--Permission to access Internet-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Permission to access network -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permission to access Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewsStoryMainActivity"
-            android:launchMode="singleInstance"/>
+        <activity
+            android:name=".NewsStoryMainActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".NewsDetailActivity"></activity>
     </application>
+
 </manifest>

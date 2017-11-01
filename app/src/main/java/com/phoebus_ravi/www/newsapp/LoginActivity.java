@@ -225,6 +225,7 @@ public class LoginActivity extends AppCompatActivity {
         if (email.equals(getResources().getString(R.string.dummy_email_id))) {
             Intent intent = new Intent(LoginActivity.this, NewsStoryMainActivity.class);
             startActivity(intent);
+            finish();
         }
     }
 }
